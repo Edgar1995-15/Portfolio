@@ -3,7 +3,6 @@ import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 import React from "react";
-const me = require('../../assets/me-about.jpg');
 
 interface Props {}
 
@@ -15,7 +14,7 @@ return (
 <div className="container about__container">
 <div className="about__me">
 <div className="about__me-image">
-<img src={me} alt="" />
+  <div className="about__me-block"></div>
 </div>
 </div>
 <div className="about__content">
@@ -36,12 +35,7 @@ return (
           <small>20+ Completed</small>
         </article>
       </div>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
-        laudantium dolore, ea possimus nam odit autem nesciunt! Dicta
-        repudiandae illum veniam molestiae rem rerum ut placeat commodi,
-        quisquam odio culpa?
-      </p>
+      <p></p>
       <a href="#contact" className="btn btn-primary">Let's Talk</a>
     </div>
   </div>
