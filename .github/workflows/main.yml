@@ -8,6 +8,8 @@ jobs:
     steps:
     - name: Deploy to Netlify
       uses: netlify/actions/cli@v1
-      with:
+      env:
         site_id: ${{ secrets.NETLIFY_SITE_ID }}
         auth_token: ${{ secrets.AUTH_TOKEN }}
+      with:
+        args: deploy
