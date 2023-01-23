@@ -9,5 +9,5 @@ jobs:
     - name: Deploy
       uses: netlify/actions/deploy@v1
       with:
-        site_id: ${{ 9dfa9df4-de09-4998-9b4e-fca8abaf51f9 }}
+        site_id: ${{ secrets.9dfa9df4-de09-4998-9b4e-fca8abaf51f9 }}
         auth_token: ${{ hsS0zCxWHlxKsS5lILlha1W38WWZ5CeKNlJNniOPvhg }}
