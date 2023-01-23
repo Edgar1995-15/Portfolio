@@ -62,4 +62,12 @@ input, textarea {
     .container.contact__container {
         width: var(--container-width-sm);
     }
+    .contact__options {
+        width: 80%;
+        margin: 0 auto;
+    }
+    form {
+        width: 60%;
+        margin: 0 auto;
+    }
 }
