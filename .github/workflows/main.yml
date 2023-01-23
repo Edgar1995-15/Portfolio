@@ -10,4 +10,4 @@ jobs:
       uses: netlify/actions/deploy@v1
       with:
         site_id: ${{ secrets.NETLIFY_SITE_ID }}
-        auth_token: ${{ hsS0zCxWHlxKsS5lILlha1W38WWZ5CeKNlJNniOPvhg }}
+        auth_token: ${{ secrets.AUTH_TOKEN }}
