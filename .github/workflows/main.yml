@@ -1,10 +1,13 @@
+
 on:
   push:
     branches:
-      - main
+      - master
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -12,7 +15,5 @@ jobs:
     - name: Deploy to Netlify
       uses: netlify/actions/deploy@master
       env:
-        site_id: ${{ secrets.NETLIFY_SITE_ID }}
-        auth_token: ${{ secrets.AUTH_TOKEN }}
-      with:
-        args: deploy
+        NETLIFY_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
