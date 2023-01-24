@@ -3,7 +3,7 @@ import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 import React from "react";
-
+const js = require("../../js.png");
 interface Props {}
 
 const About: React.FC<Props> = () => {
@@ -14,7 +14,9 @@ return (
 <div className="container about__container">
 <div className="about__me">
 <div className="about__me-image">
-  <div className="about__me-block"></div>
+  <div className="about__me-block">
+    <img src={js} alt="" />
+  </div>
 </div>
 </div>
 <div className="about__content">
